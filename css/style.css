@@ -649,6 +649,114 @@ button {
 }
 
 /* ==========================================================================
+   Kam paredzēts pakalpojums (Scenarios & Use Cases)
+   ========================================================================== */
+.scenarios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.scenario-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 30px 26px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all var(--transition-normal);
+  position: relative;
+}
+.scenario-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-accent-dark);
+  box-shadow: var(--shadow-lg);
+}
+.scenario-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+.scenario-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: var(--color-bg-subtle);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+.scenario-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-primary);
+  background: rgba(190, 229, 0, 0.22);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+.scenario-card h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+.scenario-card p {
+  color: var(--color-text-muted);
+  font-size: 0.925rem;
+  line-height: 1.55;
+  margin-bottom: 16px;
+}
+.scenario-benefit {
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px dashed var(--color-border);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.scenario-benefit svg {
+  color: var(--color-accent-dark);
+  flex-shrink: 0;
+}
+.scenario-card.featured-card {
+  grid-column: span 3;
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+  color: #FFFFFF;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+.scenario-card.featured-card h3 {
+  color: #FFFFFF;
+  font-size: 1.3rem;
+}
+.scenario-card.featured-card p {
+  color: #E2E8F0;
+  font-size: 0.975rem;
+}
+.scenario-card.featured-card .scenario-icon-box {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+.scenario-card.featured-card .scenario-tag {
+  background: var(--color-accent);
+  color: var(--color-text-on-accent);
+}
+.scenario-card.featured-card .scenario-benefit {
+  border-top-color: rgba(255, 255, 255, 0.15);
+  color: var(--color-accent);
+}
+
+/* ==========================================================================
    Cenrādis (Pricing Cards)
    ========================================================================== */
 .pricing-grid {
@@ -1104,6 +1212,12 @@ button {
   .about-grid {
     grid-template-columns: 1fr;
   }
+  .scenarios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .scenario-card.featured-card {
+    grid-column: span 2;
+  }
   .pricing-meta-grid {
     grid-template-columns: 1fr;
   }
@@ -1153,6 +1267,12 @@ button {
   }
   .pricing-grid {
     grid-template-columns: 1fr;
+  }
+  .scenarios-grid {
+    grid-template-columns: 1fr;
+  }
+  .scenario-card.featured-card {
+    grid-column: span 1;
   }
   .info-banner {
     flex-direction: column;
