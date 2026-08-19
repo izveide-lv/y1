@@ -757,6 +757,112 @@ button {
 }
 
 /* ==========================================================================
+   Misija (Mission Section)
+   ========================================================================== */
+.section-mission {
+  padding: 40px 0 60px 0;
+}
+.mission-card {
+  background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 55%, #192434 100%);
+  color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 56px 44px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-xl);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.mission-card::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: var(--color-accent-glow);
+  filter: blur(60px);
+  pointer-events: none;
+}
+.mission-card::after {
+  content: '';
+  position: absolute;
+  bottom: -80px;
+  left: -80px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  filter: blur(40px);
+  pointer-events: none;
+}
+.mission-badge {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  background: rgba(190, 229, 0, 0.15);
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  margin-bottom: 20px;
+}
+.mission-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.mission-title span {
+  color: var(--color-accent);
+  display: inline-block;
+}
+.mission-lead {
+  font-size: 1.15rem;
+  color: #CBD5E1;
+  max-width: 720px;
+  margin: 0 auto 44px auto;
+  line-height: 1.6;
+}
+.mission-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  text-align: left;
+}
+.mission-val-item {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  padding: 28px 24px;
+  transition: all var(--transition-fast);
+}
+.mission-val-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--color-accent);
+  transform: translateY(-3px);
+}
+.mission-val-icon {
+  font-size: 2rem;
+  margin-bottom: 14px;
+}
+.mission-val-item h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+}
+.mission-val-item p {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.5;
+}
+
+/* ==========================================================================
    Cenrādis (Pricing Cards)
    ========================================================================== */
 .pricing-grid {
@@ -1273,6 +1379,15 @@ button {
   }
   .scenario-card.featured-card {
     grid-column: span 1;
+  }
+  .mission-card {
+    padding: 36px 20px;
+  }
+  .mission-title {
+    font-size: 2rem;
+  }
+  .mission-values-grid {
+    grid-template-columns: 1fr;
   }
   .info-banner {
     flex-direction: column;
