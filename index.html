@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="lv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Y1.LV | Specializēti transporta pakalpojumi cilvēkiem ar kustību traucējumiem</title>
+  <meta name="description"
+    content="Y1.LV nodrošina specializēto transportu cilvēkiem ar īpašām vajadzībām un kustību traucējumiem Rīgā, visā Latvijā un ārpus tās robežām. Zvaniet: +371 20007077">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Y1.LV - Specializētā transporta pakalpojumi">
+  <meta property="og:description"
+    content="Droši un ērti pārvadājumi cilvēkiem ar invaliditāti un kustību traucējumiem. Zvaniet: +371 20007077">
+  <meta property="og:image" content="logo.png">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Pāriet uz saturu</a>
+
+  <!-- Top Informational Bar -->
+  <aside class="top-bar" aria-label="Informācijas josla">
+    <div class="container">
+      <div class="top-bar-info">
+        <div class="top-bar-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+            </path>
+          </svg>
+          <span>Pieteikumi: <a href="tel:+37120007077"><strong>+371 20007077</strong></a></span>
+        </div>
+        <div class="top-bar-item">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <span>E-pasts: <a href="mailto:info@y1.lv"><strong>info@y1.lv</strong></a></span>
+        </div>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- Site Header & Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <div class="header-inner">
+        <!-- Brand Logo -->
+        <a href="#" class="brand" aria-label="Y1.LV sākumlapa">
+          <img src="logo.png" alt="Y1.LV Logo" class="brand-logo-img">
+          <div class="brand-text">
+            <span class="brand-name">Y1<span>.LV</span></span>
+            <span class="brand-tagline">Specializētais transports</span>
+          </div>
+        </a>
+
+        <!-- Main Navigation Links -->
+        <nav aria-label="Galvenā navigācija">
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#par-pakalpojumu" class="nav-link">Par pakalpojumu</a></li>
+            <li><a href="#cenas" class="nav-link">Cenas</a></li>
+            <li><a href="#kontakti" class="nav-link">Kontakti</a></li>
+          </ul>
+        </nav>
+
+        <!-- Header CTA Actions -->
+        <div class="header-actions">
+          <a href="tel:+37120007077" class="btn-call" aria-label="Zvanīt uz tālruni +371 20007077">
+            <svg class="btn-call-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+              </path>
+            </svg>
+            <span>Zvanīt +371 20007077</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Atvērt izvēlni" aria-expanded="false"
+            aria-controls="navMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero-section" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-grid">
+
+          <div class="hero-content">
+            <div class="badge-pill">
+              <span class="badge-dot"></span>
+              <span>Specializētie transporta pakalpojumi</span>
+            </div>
+
+            <h1 class="hero-title" id="hero-heading">
+              Specializēts transports cilvēkiem ar <span class="highlight">invaliditāti</span> un kustību traucējumiem
+            </h1>
+
+            <p class="hero-lead">
+              Piedāvājam drošus, ērtus un pielāgotus pārvadājumus Rīgā, visā Latvijas teritorijā un ārpus tās robežām.
+              Profesionāls atbalsts un palīdzība nokļūšanai uz ārstniecības iestādēm, rehabilitāciju vai ikdienas
+              gaitās.
+            </p>
+
+            <div class="hero-actions">
+              <a href="tel:+37120007077" class="btn-hero-call" id="heroCallBtn">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+                <span>Zvanīt: +371 20007077</span>
+              </a>
+
+              <a href="mailto:info@y1.lv" class="btn-hero-secondary">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>Rakstīt: info@y1.lv</span>
+              </a>
+            </div>
+
+            <div class="hero-highlights">
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="highlight-text">Pielāgots transports ar pacēlāju</div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="highlight-text">Palīdzība transportēšanā pa kāpnēm</div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div class="highlight-text">Rīga, visa Latvija un ārvalstis</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-image-wrapper">
+              <img src="hero.jpg" alt="KIA PV5 WAV specializētais elektrotransports cilvēkiem ratiņkrēslā" width="1024"
+                height="576" loading="eager">
+            </div>
+            <div class="hero-floating-badge">
+              <div class="floating-badge-icon">♿</div>
+              <div class="floating-badge-text">
+                <h4>Pārvietošanās ar KIA PV5 WAV elektroauto</h4>
+                <p>Videi draudzīgs, ērts, īpaši rūpnīcā izstrādāts transports</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Par Pakalpojumu Section -->
+    <section class="section section-subtle" id="par-pakalpojumu" aria-labelledby="about-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">Par pakalpojumu</span>
+          <h2 class="section-title" id="about-heading">Ērti un droši mobilitātes risinājumi</h2>
+          <p class="section-subtitle">
+            Piedāvājam specializēto transportu cilvēkiem ar īpašām vajadzībām un kustību traucējumiem Rīgā, kā arī
+            nepieciešamības gadījumā visā Latvijā un ārpus tās robežām.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+            </div>
+            <h3>Braucieni uz ārstniecības un aprūpes iestādēm</h3>
+            <p>Nodrošinām precīzu un savlaicīgu nogādāšanu uz poliklīnikām, slimnīcām, rehabilitācijas centriem,
+              sociālajiem centriem, analīzēm vai plānveida procedūrām.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.5 2.8C2.1 11 2 11.5 2 12v4c0 .6.4 1 1 1h2">
+                </path>
+                <circle cx="7" cy="17" r="2"></circle>
+                <path d="M9 17h6"></path>
+                <circle cx="17" cy="17" r="2"></circle>
+              </svg>
+            </div>
+            <h3>Pielāgots transports ratiņkrēsliem</h3>
+            <p>Specializēts mikroautobuss ar elektrisko/hidraulisko pacēlāju un sertificētiem daudzpunktu stiprinājumiem
+              – klients ceļo droši savā personīgajā ratiņkrēslā.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3>Asistenta palīdzība un kāpņu serviss</h3>
+            <p>Apmācīts un iejūtīgs personāls palīdz izkļūt no mājokļa, veic transportēšanu pa kāpnēm neatkarīgi no
+              stāvu skaita un pavada līdz pašām iestādes durvīm.</p>
+          </article>
+        </div>
+
+
+
+      </div>
+    </section>
+
+    <!-- Cenas Section -->
+    <section class="section" id="cenas" aria-labelledby="pricing-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">Pakalpojumu izmaksas</span>
+          <h2 class="section-title" id="pricing-heading">Skaidrs un caurskatāms cenrādis</h2>
+          <p class="section-subtitle">
+            Pārskatāmas cenas bez slēptām izmaksām. Norēķini iespējami gan privātpersonām, gan juridiskām personām.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+
+          <!-- Card 1: Minimālā brauciena maksa -->
+          <div class="price-card featured">
+            <div class="price-card-badge">Populārākais</div>
+            <div class="price-card-header">
+              <h3 class="price-card-title">Minimālais brauciens</h3>
+              <p class="price-card-desc">Bāzes brauciens pa Rīgu</p>
+            </div>
+            <div class="price-amount-wrapper">
+              <div class="price-amount">40,00 €</div>
+              <div class="price-unit">līdz 20 km maršrutam pa Rīgu</div>
+            </div>
+            <ul class="price-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Specializēts transports</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Iekāpšanas pacēlājs</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Iekļauts līdz 20 km</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 2: Kilometru likme -->
+          <div class="price-card">
+            <div class="price-card-header">
+              <h3 class="price-card-title">Papildu kilometri</h3>
+              <p class="price-card-desc">Pārsniedzot bāzes distanci</p>
+            </div>
+            <div class="price-amount-wrapper">
+              <div class="price-amount">1,00 €</div>
+              <div class="price-unit">par katru km (sākot no 21 km)</div>
+            </div>
+            <ul class="price-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Braucieni ārpus Rīgas</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Pārvadājumi visā Latvijā</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Pēc precīza nobraukuma</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 3: Kāpņu transports -->
+          <div class="price-card">
+            <div class="price-card-header">
+              <h3 class="price-card-title">Transports pa kāpnēm</h3>
+              <p class="price-card-desc">Klientiem ratiņkrēslā</p>
+            </div>
+            <div class="price-amount-wrapper">
+              <div class="price-amount">10,00 €</div>
+              <div class="price-unit">neatkarīgi no stāvu skaita</div>
+            </div>
+            <ul class="price-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Sēdošiem klientiem</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Droša pārvietošana</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Fiksēta maksa</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Card 4: Gaidīšanas laiks -->
+          <div class="price-card">
+            <div class="price-card-header">
+              <h3 class="price-card-title">Gaidīšanas maksa</h3>
+              <p class="price-card-desc">Kamēr esat pie ārsta vai procedūrā</p>
+            </div>
+            <div class="price-amount-wrapper">
+              <div class="price-amount">15,00 €</div>
+              <div class="price-unit">par stundu</div>
+            </div>
+            <ul class="price-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Auto paliek uz vietas</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Gatavs tūlītējai atpakaļceļam</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Bez liekas stresošanas</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Pricing Meta Terms -->
+        <div class="pricing-meta-grid">
+          <div class="meta-box">
+            <div class="meta-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <div class="meta-content">
+              <h4>Pieteikšanas laiks</h4>
+              <p>Pārvadājumus var pieteikt darba dienās plkst. <strong>09.00–17.00</strong>.</p>
+            </div>
+          </div>
+
+          <div class="meta-box">
+            <div class="meta-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <div class="meta-content">
+              <h4>Pakalpojumu nodrošināšana</h4>
+              <p>Transporta pakalpojumi tiek nodrošināti plkst. <strong>07.00–20.00</strong>.</p>
+            </div>
+          </div>
+
+          <div class="meta-box">
+            <div class="meta-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                <line x1="1" y1="10" x2="23" y2="10"></line>
+              </svg>
+            </div>
+            <div class="meta-content">
+              <h4>Apmaksas veids</h4>
+              <p>Norēķini skaidrā naudā vai ar pārskaitījumu (juridiskām un fiziskām personām).</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Kontakti Section -->
+    <section class="section section-subtle" id="kontakti" aria-labelledby="contacts-heading">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag">Sazināties</span>
+          <h2 class="section-title" id="contacts-heading">Pieteikt transportu vai uzzināt vairāk</h2>
+          <p class="section-subtitle">
+            Sazinieties ar mums pa tālruni vai e-pastu, lai vienotos par brauciena laiku un detaļām.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Main Call Card -->
+          <div class="contact-card-main">
+            <h3>Pieteikumu tālrunis</h3>
+            <p>Zvaniet mums, lai pieteiktu specializēto transportu vai noskaidrotu brauciena izmaksas.</p>
+
+            <div class="contact-item-group">
+              <a href="tel:+37120007077" class="contact-link-row" aria-label="Zvanīt +371 20007077">
+                <div class="contact-row-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                </div>
+                <div class="contact-row-info">
+                  <span class="contact-row-label">Tālrunis pieteikumiem</span>
+                  <span class="contact-row-val">+371 20007077</span>
+                </div>
+              </a>
+
+              <a href="mailto:info@y1.lv" class="contact-link-row" aria-label="Rakstīt uz e-pastu info@y1.lv">
+                <div class="contact-row-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-row-info">
+                  <span class="contact-row-label">E-pasts saziņai</span>
+                  <span class="contact-row-val">info@y1.lv</span>
+                </div>
+              </a>
+            </div>
+
+            <a href="tel:+37120007077" class="btn-contact-call">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+              <span>Zvanīt: +371 20007077</span>
+            </a>
+          </div>
+
+          <!-- Working Hours & Details -->
+          <div class="contact-card-secondary">
+            <div class="contact-meta-item">
+              <div class="contact-meta-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="contact-meta-text">
+                <h4>Pieteikumu pieņemšanas laiks</h4>
+                <p>Darba dienās no plkst. <strong>09:00 līdz 17:00</strong></p>
+              </div>
+            </div>
+
+            <div class="contact-meta-item">
+              <div class="contact-meta-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="contact-meta-text">
+                <h4>Pakalpojumu teritorija</h4>
+                <p>Rīga, Rīgas rajons, visa Latvijas teritorija un starptautiskie braucieni</p>
+              </div>
+            </div>
+
+            <div class="contact-meta-item">
+              <div class="contact-meta-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <div class="contact-meta-text">
+                <h4>Norēķini un līgumi</h4>
+                <p>Izrakstām rēķinus fiziskām un juridiskām personām, pašvaldību sociālajiem dienestiem un veselības
+                  aprūpes centriem.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+
+      <!-- EU Co-financing Banner -->
+      <div class="eu-cofinance-box">
+        <img src="es.png" alt="Līdzfinansē Eiropas Savienība" class="eu-logo-img" width="220" height="50">
+        <div class="eu-cofinance-text">
+          <strong>Projektu līdzfinansē Eiropas Savienība - Atbalsts sociālajai uzņēmējdarbībai</strong><br />
+          <strong>Projekta mērķis:</strong> "Uzlabot cilvēku ar kustību traucējumiem un vientuļo senioru dzīves
+          kvalitāti, nodrošinot viņiem drošu un pieejamu pārvadājumu pakalpojumu. Projekta īstenošana mazinās sociālo
+          izolāciju, veicinās šo cilvēku iekļaušanos sabiedrībā un palielinās viņu iespējas nokļūt uz ārstniecības
+          iestādēm, sociālās aprūpes centriem un kultūras pasākumiem."<br /> Projekta ilgums: 05.2026.-04.2028. Kopējais
+          budžets: 44 444.00 EUR ES finansējums: 39 999.60 EUR
+        </div>
+      </div>
+
+      <!-- Footer Main Grid -->
+      <div class="footer-main-grid">
+        <div class="footer-brand">
+          <a href="#" class="brand">
+            <img src="logo.png" alt="Y1.LV Logo" class="brand-logo-img">
+            <div class="brand-text">
+              <span class="brand-name">Y1<span>.LV</span></span>
+              <span class="brand-tagline">Specializētais transports</span>
+            </div>
+          </a>
+          <p class="footer-about-text">
+            Specializētie transporta pārvadājumi cilvēkiem ar invaliditāti un kustību traucējumiem Rīgā un visā Latvijā.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navigācija</h4>
+          <ul class="footer-links">
+            <li><a href="#par-pakalpojumu">Par pakalpojumu</a></li>
+            <li><a href="#cenas">Cenas un tarifi</a></li>
+            <li><a href="#kontakti">Kontakti</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Kontakti</h4>
+          <ul class="footer-contacts-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+              <a href="tel:+37120007077"><strong>+371 20007077</strong></a>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:info@y1.lv"><strong>info@y1.lv</strong></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>&copy; 2026 Y1.LV. Visas tiesības aizsargātas.</div>
+        <div>Specializētais transports personām ar funkcionāliem traucējumiem</div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky Call Bar (visible on small screens) -->
+  <div class="mobile-call-bar" aria-label="Mobilā zvanīšanas poga">
+    <a href="tel:+37120007077" class="mobile-call-btn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path
+          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+        </path>
+      </svg>
+      <span>Zvanīt: +371 20007077</span>
+    </a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
