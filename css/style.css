@@ -1110,6 +1110,86 @@ button {
 }
 
 /* ==========================================================================
+   Biežāk uzdotie jautājumi (FAQ Section)
+   ========================================================================== */
+.faq-list {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.faq-item {
+  background: #FFFFFF;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+}
+
+.faq-item:hover {
+  border-color: var(--color-border-hover);
+  box-shadow: var(--shadow-md);
+}
+
+.faq-item[open] {
+  border-color: var(--color-accent-dark);
+  box-shadow: var(--shadow-md);
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 26px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  gap: 16px;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-full);
+  background: var(--color-bg-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  flex-shrink: 0;
+  transition: transform var(--transition-fast), background var(--transition-fast);
+}
+
+.faq-item[open] .faq-question-icon {
+  transform: rotate(180deg);
+  background: var(--color-accent);
+  color: var(--color-primary);
+}
+
+.faq-answer {
+  padding: 0 26px 24px 26px;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  border-top: 1px solid var(--color-bg-subtle);
+  padding-top: 16px;
+}
+
+.faq-answer p + p {
+  margin-top: 12px;
+}
+
+/* ==========================================================================
    Kontakti (Contact Section)
    ========================================================================== */
 .contact-grid {
