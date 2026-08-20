@@ -1238,7 +1238,7 @@ button {
   overflow: hidden;
 }
 
-.contact-card-main::after {
+/* .contact-card-main::after {
   content: '';
   position: absolute;
   top: -50px;
@@ -1249,7 +1249,7 @@ button {
   background: var(--color-accent-glow);
   filter: blur(40px);
   pointer-events: none;
-}
+} */
 
 .contact-card-main h3 {
   font-size: 1.75rem;
