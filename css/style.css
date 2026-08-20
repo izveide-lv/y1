@@ -1185,7 +1185,7 @@ button {
   padding-top: 16px;
 }
 
-.faq-answer p + p {
+.faq-answer p+p {
   margin-top: 12px;
 }
 
@@ -1383,7 +1383,7 @@ button {
 }
 
 .eu-logo-img {
-  height: 46px;
+  height: 129px;
   width: auto;
   object-fit: contain;
   background: #FFFFFF;
@@ -1747,7 +1747,7 @@ button {
   }
 
   .eu-logo-img {
-    height: 40px;
+    height: 129px;
   }
 
   .mobile-call-bar {
